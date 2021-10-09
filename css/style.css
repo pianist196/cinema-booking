@@ -7,6 +7,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #621402;
+    color: white;
 }
 
 .container {
@@ -15,6 +16,14 @@ body {
 }
 
 .header {
+    min-height: 100vh;
+    background-image: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url('../image/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.navbar {
     display: flex;
     align-items: center;
     padding: 30px 0;
@@ -23,7 +32,7 @@ body {
 .menu {
     display: flex;
     list-style: none;
-    margin: 0 0  0 17px;
+    margin: 0 0 0 17px;
 }
 
 .menu-item {
@@ -50,4 +59,137 @@ body {
     margin-left: auto;
 }
 
+.film {
+    margin-top: 60px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
 
+.film-title-small {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.film-title {
+    font-size: 36px;
+    margin-top: 11px;
+    margin-bottom: 33px;
+}
+
+.film-description {
+    font-size: 16px;
+    max-width: 560px;
+}
+
+.film-trailer {
+    margin: auto;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    margin-right: 34px;
+}
+
+.time-icon {
+    margin-right: 14px;
+}
+
+.film-details {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.rating {
+    display: flex;
+}
+
+.rating-strong {
+    font-size: 24px;
+}
+
+.rating-icon {
+    margin-right: 14px;
+}
+
+.session {
+    margin-top: 62px;
+    padding-top: 46px;
+    padding-bottom: 63px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.session-label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.session-date-block {
+    display: flex;
+}
+
+.session-date-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    text-align: center;
+    padding: 9px;
+    width: 90px;
+    height: 90px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.session-month {
+    font-size: 16px;
+    transition: all 0.5s ease-in-out;
+}
+
+.session-item-date {
+    font-size: 30px;
+    font-weight: 900;
+    transition: all 0.5s ease-in-out;
+}
+
+.session-week {
+    font-size: 19px;
+    transition: all 0.5s ease-in-out;
+}
+
+.session-date-item:hover {
+    background: #FE8E05;
+}
+
+.session-date-item:hover > .session-month,
+.session-date-item:hover > .session-item-date,
+.session-date-item:hover > .session-week {
+    color: #621402;
+}
+
+.select {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    color: #fff;
+    padding: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.select > option {
+    color: #621402;
+}
+
+.select-cinema {
+    min-width: 470px;
+}
