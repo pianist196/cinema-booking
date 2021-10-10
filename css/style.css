@@ -193,3 +193,93 @@ body {
 .select-cinema {
     min-width: 470px;
 }
+
+.scheme {
+    background-color: rgba(36, 36, 36, 0.18);
+    border-radius: 10px;
+}
+
+.scheme path:not(.light) {
+    fill: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.scheme path:not(.light):hover {
+    fill: rgba(255, 255, 255, 0.5);
+}
+
+.scheme path.booked,
+.scheme path.booked:hover {
+    fill: rgba(255, 255, 255, 0.05);
+    cursor: not-allowed;
+}
+
+.scheme path.free {
+    fill: rgba(255, 255, 255, 0.2);
+}
+
+.scheme path.selected,
+.scheme path.selected:hover {
+    fill: #FE8E05;
+}
+
+.legend {
+    display: flex;
+    align-items: center;
+    padding-bottom: 38px;
+    padding-top: 22px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    max-width: 1024px;
+    margin: auto;
+}
+
+.legend svg {
+    margin-right: 15px;
+}
+
+.legend-label {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.legend-selected-text {
+    color: #FE8E05;
+}
+
+.legend-booked-text,
+.legend-free-text {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.active {
+    fill: #FE8E05 !important;
+}
+
+.price {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 62px;
+}
+.price-label {
+    display: block;
+    font-size: 18px;
+}
+.price-total {
+    font-size: 52px;
+}
+.ruble {
+    font-size: 52px;
+}
+.button {
+    background: #FE8E05;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 24px 52px;
+    text-decoration: none;
+}
